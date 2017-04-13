@@ -36,10 +36,12 @@
         }
     });
 
-    ReactDOM.render(
-      <div>
-        <App/>
-      </div>,
+   ReactDOM.render(
+      <ReactRouter.Router history={ReactRouter.hashHistory}>
+        <ReactRouter.Route path="/" component={App}>
+
+        </ReactRouter.Route>
+      </ReactRouter.Router>,
       destination
     );
   </script>
